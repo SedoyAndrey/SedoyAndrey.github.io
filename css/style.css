@@ -1,0 +1,359 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: url(../image/Homepage.jpg);
+	border-top: 5px solid #7e7e7e;
+	font-family: sans-serif;
+}
+
+.wrapper {
+	max-width: 960px;
+	max-height: 100%;
+	margin: 0 auto;
+}
+/*------------------------*/
+.header {
+	padding: 25px 0;
+}
+
+.header__logo {
+	float: left;
+}
+
+.header__search {
+	float: right;
+}
+
+.header__search-input {
+	border: 1px solid #b2b2b2;
+	background-color: #f3f3f3;
+	color: #b2b2b2;
+	height: 30px;
+	width: 155px;
+	padding-left: 15px;
+}
+
+.header__search-button {
+	background-color: #29c5e6;
+	color: #fff;
+	width: 40px;
+	height: 30px;
+	text-transform: uppercase;
+	float: right;
+}
+/*-----------------------------*/
+.nav-bar__list {
+	height: 40px;
+	background-color: #f3f3f3;
+	margin: 25px 0;
+	border: 1px solid #b2b2b2;
+}
+
+.nav-bar__item {
+	text-decoration: none;
+	display: inline-block;
+  padding: 11px 25px;
+	float: left;
+	color: #b2b2b2;
+	text-transform: uppercase;
+	font: 14px 'Oswald', sans-serif;	
+}
+
+.nav-bar__item--active{
+	background: #29c5e6;
+	color: #fff;
+}
+/*-------------------------------*/
+.slider {
+	height: 330px;
+	box-shadow: 0px 2px 3px -2px gray;
+}
+
+.slider__carusel {
+	height: 270px;
+	background: #e2e2e2;
+	padding: 30px;
+}
+.slider-title {
+	font-size: 30px;
+	color: gray;
+	font-family: 'Oswald', sans-serif;
+	padding-bottom: 10px;
+	font-stretch: ultra-condensed;
+}
+
+.slider-title-text {
+	color: gray;
+	font-stretch: ultra-condensed;
+}
+
+.slider-list__item {
+	padding: 20px;
+}
+
+.list-element {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.list-element-number {
+	height: 25px;
+	width: 25px;
+	background: #8f8f8f;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.list-element-text {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-left: 5px;
+	color: #8f8f8f;
+	font-family: 'Oswald';
+}
+
+.list-element-active {
+	background-color: #29c5e6;
+}
+
+.list-text-active {
+	color: #29c5e6;
+}
+/*----------------------------*/
+.news {
+	margin: 25px 0;
+	font-family: 'Tahoma Regular', sans-serif;
+	color: #8f8f8f;
+	font-size: 14px;
+/*	line-height: 1.2;*/
+}
+
+.news__content {
+	display: inline-block;
+	width: 49%;
+	padding-bottom: 30px;
+}
+
+.news--title {
+	text-transform: uppercase;
+	color: #7e7e7e;
+	display: inline-block;
+	padding: 15px 7px;
+}
+
+.news--title::before {
+	content: '';
+	height: 15px;
+	width: 15px;
+	background-color: #29c5e6;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.news-content__image {
+	display:inline-block;
+	width: 30%;
+	padding-right: 20px;
+	vertical-align: top;
+	background-color: #f3f3f3;
+	height: 164px;
+	border: 1px solid gray;
+	box-shadow: inset 3px 3px #fff, inset -3px -3px #fff;
+}
+
+.news-content__text {
+	display: inline-block;
+	width: 69%;
+	line-height: 1.1;
+	padding: 0 15px;
+}
+.content--m {
+	padding-right: ;
+}
+
+.news__more {
+	color: #525252;
+	padding: 15px 0 0 0;
+}
+/*-----------*/
+
+.news-content--m {
+	width: 33%;
+	display: inline-block;
+}
+
+.content__discription {
+	display: block;
+	margin-bottom: 6px;
+}
+.discription-block {
+	display: inline-block;
+	width: 78%;
+}
+.discription-img {
+	display: inline-block;
+	width: 20%;
+}
+
+.discription-title {
+	display: inline-block;
+}
+
+.discription-text {
+	display: inline-block;
+}
+/*--------*/
+
+.clients-logo {
+	margin-top: 20px;
+}
+
+
+/*---*/
+
+.footer {
+	background-color: #7e7e7e;
+	padding: 20px 0;
+}
+
+.footer-title {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.footer__hr {
+	border: 0.4px solid #919191;
+}
+
+.text__left {
+	text-align: left;
+}
+
+.footer__date {
+	color: #b4aeae;
+	text-decoration: underline;
+}
+
+.footer__text {
+	color: #dbdbdb;
+	font-size: 14px;
+}
+
+.map-left a {
+	display: block;
+	margin-top:;
+}
+
+
+.social--size {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background-image: url(../image/SocialNetwork.png);
+	background-size: 270px;
+}
+
+.social__tweet {
+	background-position: -2px -54px;
+	
+}
+
+.social__facebook {
+	background-position: -2px -0px;
+}
+
+.social__google {
+	background-position: -53px -0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

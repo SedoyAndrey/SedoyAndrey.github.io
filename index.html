@@ -1,104 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>БЭМ</title>
-	<link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8" />
+	<title>БЭМ</title><style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}button,input,optgroup,select,textarea{background:0 0;border:0;padding:0;margin:0;font:inherit;color:inherit;box-shadow:none}button{height:auto;cursor:pointer}button:focus{outline:0}button::-moz-focus-inner{outline:0;border:0;padding:0}a{text-decoration: none; color: inherit;}
+  </style>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width" />
 </head>
-<body class="b-page">
-		<div class="b-page__head-line">
-			
-		</div>
-		<div class="b-page__line">
-			<div class="b-head">
-				<div class="b-head__logo">
-					<a href="#"><img src="image/logo.png" alt="logo"></a>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header__logo">
+				<img src="image/logo.png" alt="Logo">
+			</a>
+			<div class="header__search">
+				<form name="search" action="#" method="get">
+					<input class="header__search-input" type="text" placeholder="Search">
+					<button class="header__search-button" type="button">Go</button>
+				</form>
+			</div>
+		</header>
+		<nav class="nav-bar">
+			<ul class="nav-bar__list">
+				<li><a href="#" class="nav-bar__item nav-bar__item--active">Home</a></li>
+				<li><a href="#" class="nav-bar__item">About us</a></li>
+				<li><a href="#" class="nav-bar__item">Services</a></li>
+				<li><a href="#" class="nav-bar__item">Partners</a></li>
+				<li><a href="#" class="nav-bar__item">Customers</a></li>
+				<li><a href="#" class="nav-bar__item">Projects</a></li>
+				<li><a href="#" class="nav-bar__item">Careers</a></li>
+				<li><a href="#" class="nav-bar__item">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="slider">
+			<div class="slider__carusel">
+         <!--		JS		-->
+         <h1 class="slider-title">FUSCE VITAE NIBN QUIS DIAM FERMENTUM</h1>
+         <p class="slider-title-text">Etiam adipscing ultricies commodo.</p>
+			</div>
+			<div class="slider-list__item">
+				<div class="list-element">
+					<span class="list-element-number list-element-active">1</span>
+					<span class="list-element-text list-text-active">Lorem ipsum dolor</span>
 				</div>
-				<div class="b-head__search">
-					<div class="b-search">
-						<div class="b-search__input">
-							<input type="text" class="b-input b-input_search" placeholder="Search">
-						</div><div class="b-search__input"></div><div class="b-button">GO</div>
+				<div class="list-element">
+					<span class="list-element-number">2</span>
+					<span class="list-element-text">Ultricies pellentesque</span>
+				</div>
+				<div class="list-element">
+					<span class="list-element-number">3</span>
+					<span class="list-element-text">Aliquam ipsum</span>
+				</div>
+				<div class="list-element">
+					<span class="list-element-number">4</span>
+					<span class="list-element-text">Nullam sed mauris ut</span>
+				</div>
+			</div>
+		</div>
+		<main class="news">
+			<article class="news-block">
+				<section class="news__content">
+					<div class="news__content--title">
+						<h2 class="news--title">About whitesquare</h2>
+						<img src="image/pattern.png" alt="pattern" width="280px" class="title-pattern" />
 					</div>
+					<div class="news-content__image">
+					  <img src="image/news-2.png" alt="news" />
+					</div>
+					<div class="news-content__text">
+						<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices. 
+						</p>
+						<p  class="news__more">
+						  <a href="#">Read more</a>
+						</p>
+					</div>
+				</section>
+				<section class="news__content">
+					<div class="news__content--title">
+						<h2 class="news--title">A word from our ceo</h2>
+						<img src="image/pattern.png" alt="pattern" width="270px" class="title-pattern" />
+					</div>
+					<div class="news-content__image">
+					  <img src="image/news-2.png" alt="news">
+					</div>
+					<div class="news-content__text text--m">
+						<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices. 
+						</p>
+						<p  class="news__more">
+						  <a href="#">Yane Naumoski, CEO</a>
+						</p>
+					</div>
+				</section>
+			</article>
+			<article class="news-block">
+				<section class="news-content news-content--m">
+					<div class="news-content__text--m">
+					<h2 class="news--title">Services</h2>
+					<img src="image/pattern-services.png" alt="pattern" width="" class="title-pattern" />
+						<p class="">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices. 
+						</p>
+						<p  class="news__more">
+						  <a href="#">Read more</a>
+						</p>
+					</div>
+				</section>
+				<section class="news-content news-content--m">
+				<h2 class="news--title">our teams</h2>
+					<img src="image/pattern-our.png" alt="pattern" width="" class="title-pattern" />
+					<div class="content__discription">
+						<div class="discription-img">
+							<img src="image/teams-1.png" alt="Foto">
+						</div>
+						<div class="discription-block">
+							<h2 class="discription-title">Lorem ipsum</h2>
+						<p class="discription-text">Lorem ipsum dolor , consectetur adipisicing eli!</p>
+						</div>
+					</div>
+					<div class="content__discription">
+						<div class="discription-img">
+							<img src="image/teams-2.png" alt="Foto">
+						</div>
+						<div class="discription-block">
+							<h2 class="discription-title">Lorem ipsum</h2>
+						<p class="discription-text">Lorem ipsum do sit amet, consectetur adipisicing eli!</p>
+						</div>
+					</div>
+					<div class="content__discription">
+						<div class="discription-img">
+							<img src="image/teams-3.jpg" alt="Foto">
+						</div>
+						<div class="discription-block">
+							<h2 class="discription-title">Lorem ipsum</h2>
+						<p class="discription-text">Lorem ipsum dolor sit amet, consecte adipisicing eli!</p>
+						</div>
+					</div>
+				</section>
+				<section class="news-content news-content--m">
+					<div class="news-content__text--m">
+					<h2 class="news--title">27/7/365 support</h2>
+					<img src="image/pattern-support.png" alt="pattern" width="px" class="title-pattern" />
+						<p class="">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices. 
+						</p>
+						<p  class="news__more">
+						  <a href="#">Read more</a>
+						</p>
+					</div>
+				</section>
+			</article>
+			<section class="clients-logo">
+			  <h2 class="news--title">Our clients</h2>
+			  <img src="image/clients.png" alt="logo-clients">
+				<div class="logo">
+					<img src="image/client-logo.png" alt="logo" class="clients-img">
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__twitter list-element text__left">
+				<h3 class="footer-title">Twitter Feed</h3>
+				<hr class="footer__hr">
+				<a href="#" class="footer__date">23 oct</a><br><br>
+				<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quasi.</p>
+			</div>
+			<div class="footer__sitemap list-element text__left">
+				<h3 class="footer-title">Twitter Feed</h3>
+				<hr class="footer__hr">
+				<div class="map-left footer__text">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Service</a>
+				</div>				
+			</div>
+			<div class="footer__networks list-element">
+				<h3 class="footer-title">Social networks</h3>
+				<hr class="footer__hr">
+				<div>
+					<div class="social__tweet social--size"></div>
+					<div class="social__facebook social--size"></div>
+					<div class="social__google social--size"></div>
 				</div>
 			</div>
-		</div><!--b-page__line END-->
-		<div class="b-page__line">
-			<div class="b-menu">
-				<a href="#" class="b-link b-link_menu b-link_menu_active">HOME</a>
-				<a href="#" class="b-link b-link_menu">ABOUT US</a>
-				<a href="#" class="b-link b-link_menu">SERVICES</a>
-				<a href="#" class="b-link b-link_menu">PARTNERS</a>
-				<a href="#" class="b-link b-link_menu">CUSYOMERS</a>
-				<a href="#" class="b-link b-link_menu">PROJECTS</a>
-				<a href="#" class="b-link b-link_menu">CAREERS</a>
-				<a href="#" class="b-link b-link_menu">CONTACT</a>
+			<div class="footer__logo list-element">
+				<img src="image/footer-logo.png" alt="footer-logo" />
+				<p  class="footer__text">Coryring @ 2012 Whitesquare. A creation</p>
 			</div>
-		</div><!--b-menu END-->
-		<div class="b-page__line">
-			<div class="b-slider">
-            <div class="b-slider__current">
-                <div class="b-slide">
-                    <div class="b-slide__text">
-                        <div class="b-slide-text">
-                            <div class="b-slide__header">  
-                                FUSCE VITAE NIBN QUIS DIAM FERMENTUM
-                            </div>
-                            <div class="b-slide__subtext">
-                                Etiam adipscing ultricies commodo.
-                            </div>
-                        </div>                       
-                    </div>
-                    <div class="b-slide__image">
-                        <img class="b-image b-image_slider" src="image/Slider.jpg" alt="slider">
-                    </div>
-                </div>
-            </div>
-            <div class="b-slider__list">
-                <ul class="b-slide-list">
-                    <li class="b-slide-list__item">
-                        <div class=b-slider-case-element>
-                            <span class="b-slider-case-element__number b-slider-case-element__number_active">1</span>
-                            <span class="b-slider-case-element__text b-slider-case-element__text_active">LOREM IPSUM DOLOP</span>
-                        </div>
-                    </li>
-                    <li class="b-slide-list__item">
-                        <div class=b-slider-case-element>
-                            <span class="b-slider-case-element__number">2</span>
-                            <span class="b-slider-case-element__text">ULTRICIES PELLENTESQUE</span>
-                        </div>
-                    </li>
-                    <li class="b-slide-list__item">
-                        <div class=b-slider-case-element>
-                            <span class="b-slider-case-element__number">3</span>
-                            <span class="b-slider-case-element__text">ALIQUAM IPSUM</span>
-                        </div>
-                    </li>
-                    <li class="b-slide-list__item">
-                        <div class=b-slider-case-element>
-                            <span class="b-slider-case-element__number">4</span>
-                            <span class="b-slider-case-element__text">NULLAM SED MAURIS UT</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-		</div><!--b-slider END-->
-		<div class="b-page__line">
-			<!--LiveInternet counter--><script type="text/javascript">
-document.write("<a href='//www.liveinternet.ru/click' "+
-"target=_blank><img src='//counter.yadro.ru/hit?t14.5;r"+
-escape(document.referrer)+((typeof(screen)=="undefined")?"":
-";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-";h"+escape(document.title.substring(0,150))+";"+Math.random()+
-"' alt='' title='LiveInternet: показано число просмотров за 24"+
-" часа, посетителей за 24 часа и за сегодня' "+
-"border='0' width='88' height='31'><\/a>")
-</script><!--/LiveInternet-->
-		</div><!--b-company END-->
-		<div class="b-page__footer">
-			
-		</div>
+		</div>		
+	</footer>
 </body>
 </html>
