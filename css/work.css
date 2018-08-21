@@ -23,7 +23,7 @@ body {
   font-family: sans-serif;
 }
 
-.content {
+.conteiner {
   max-width: 960px;
   min-width: 320px;
   margin: auto;
@@ -31,7 +31,9 @@ body {
 }
 
 /*--------------------*/
-
+header {
+	padding: 0px 0px 15px;
+}
 .menu {
   text-align: right;
   font-weight: bold;
@@ -169,7 +171,6 @@ body {
   }
   .footer {
     display: flex;
-    flex-direction: colum;
     justify-content: center;
   }
   .footer__content {
@@ -179,6 +180,82 @@ body {
     margin: 7px;
   }
 }
+/*Work Content*/
+
+.work-content {
+	padding: 40px 0;
+}
+
+.work-block {
+	display: flex;
+	flex-flow: row wrap;
+	padding-bottom: 20px;
+}
+
+.work-images {
+	flex: 2 1 600px;
+	height: 200px;
+	padding: 5px;
+}
+.images--bg-1 {
+	height: 100%;
+	background-image: url(../images/Article.jp);
+	overflow-y: scroll;
+	background-size: ;
+	background-position: 110px -10px;
+}
+.images--bg-1 img {
+	width: 100%;
+}
+.work-description {
+	flex: 1 1 300px;
+	height: 150px;
+	padding: 15px;
+	align-self: flex-end;
+	font-family: 'Orbitron';
+	color: #d14343;
+	font-size: 20px;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-end;
+}
+.work--title {
+/*	------  */
+}
+.work--text {
+	padding: 5px 0 25px;
+	font-size: 15px;
+	color: #8c8c8c;
+	font-family: serif;
+}
+.work-btn {
+	padding: 10px 15px;
+	border: 1px solid #d14343;
+	border-radius: 3px;
+}
+.btn--bg {
+	color: #fff;
+	background-color: #d14343;
+}
+.work-btn:hover {
+	color: #fff;
+	background-color: #d14343;
+}
+.btn--bg:hover {
+	background-color: firebrick;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Footer*/
@@ -191,7 +268,7 @@ body {
 .footer__content {
   float: left;
   padding: 17px 10px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron';
 }
 
 .footer__social {
