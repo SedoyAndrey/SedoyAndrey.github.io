@@ -1,101 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio</title><style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}button,input,optgroup,select,textarea{background:0 0;border:0;padding:0;margin:0;font:inherit;color:inherit;box-shadow:none}button{height:auto;cursor:pointer}button:focus{outline:0}button::-moz-focus-inner{outline:0;border:0;padding:0}a{text-decoration: none; color: inherit;}
-    </style>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="conteiner">
-      <header>
-        <nav class="menu">
-          <div class="my-name">
-            <p class="my-name__name">Sedoy Andrey</p>
-            <p class="my-name__portfolio">The Portfolio</p>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <style>
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline
+    }
+
+    html {
+      line-height: 1
+    }
+
+    ol,
+    ul {
+      list-style: none
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    caption,
+    td,
+    th {
+      text-align: left;
+      font-weight: 400;
+      vertical-align: middle
+    }
+
+    blockquote,
+    q {
+      quotes: none
+    }
+
+    blockquote:after,
+    blockquote:before,
+    q:after,
+    q:before {
+      content: "";
+      content: none
+    }
+
+    a img {
+      border: none
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+      display: block
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      background: 0 0;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      font: inherit;
+      color: inherit;
+      box-shadow: none
+    }
+
+    button {
+      height: auto;
+      cursor: pointer
+    }
+
+    button:focus {
+      outline: 0
+    }
+
+    button::-moz-focus-inner {
+      outline: 0;
+      border: 0;
+      padding: 0
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="conteiner">
+    <header>
+      <nav class="menu">
+        <div class="my-name">
+          <p class="my-name__name">Sedoy Andrey</p>
+          <p class="my-name__portfolio">The Portfolio</p>
+        </div>
+        <div class="menu__icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu__links">
+          <a href="index.html" class="menu__links-item menu_active">Home</a>
+          <a href="pages/work.html" class="menu__links-item">Work</a>
+          <a href="pages/contact.html" class="menu__links-item">Contact</a>
+          <a href="pages/blog.html" class="menu__links-item">Blog</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="main__title"><span>Hello!</span><br>Looking for a web developer? Well, you found him!</h1>
+      <div class="main__skills">
+        <div class="skills__left">
+          <h2 class="skills__hr">About me</h2>
+          <div class="skills__block-1">
+            <img src="images/avatar.jpg" alt="Avatar" height="150" class="scills__img" />
+            <p class="scills__left-text"> Создаю... Разрабатываю... Творю и обожаю свою работу. Чёткая и эффективная организация, позволяют мне браться за проекты любой сложности, разрабатывать сайты с гибким дизайном и надёжными решениями, выполнять любые, даже невозможные задачи, и создавать совершенно новые продукты.</p>
           </div>
-          <div class="menu__icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu__links">
-            <a href="index.html" class="menu__links-item menu_active">Home</a>
-            <a href="pages/work.html" class="menu__links-item">Work</a>
-            <a href="pages/contact.html" class="menu__links-item">Contact</a>
-            <a href="pages/blog.html" class="menu__links-item">Blog</a>
-          </div>
-        </nav>
-      </header>
-      <main class="main">
-        <h1 class="main__title"><span>Hello!</span><br>Looking for a web developer? Well, you found him!</h1>
-        <div class="main__skills">
-          <div class="skills__left">
-            <h2 class="skills__hr">About me</h2>
-            <div class="skills__block-1">
-              <img src="images/avatar.jpg" alt="Avatar" height="150" class="scills__img" />
-              <p class="scills__left-text"> Создаю... Разрабатываю... Творю и обожаю свою работу. Чёткая и эффективная организация, позволяют мне браться за проекты любой сложности, разрабатывать сайты с гибким дизайном и надёжными решениями, выполнять любые, даже невозможные задачи, и создавать совершенно новые продукты.</p>
+        </div>
+        <div class="skills__right">
+          <h2 class="skills__hr">Skills</h2>
+          <div class="skills__block-2">
+            <div class="skills__right-web">
+              <h3 class="scills__list-title">Web</h3>
+              <ul class="scills__list">
+                <li><a href="#" class="scills__list--color">HTML</a></li>
+                <li><a href="#" class="scills__list--color">CSS</a></li>
+                <li><a href="#" class="scills__list--color">Jawa Script</a></li>
+                <li><a href="#" class="scills__list--color">Node JS</a></li>
+              </ul>
+            </div>
+            <div class="skills__right-framework">
+              <h3 class="scills__list-title">Framework</h3>
+              <ul class="scills__list">
+                <li><a href="#" class="scills__list--color">Word Press</a></li>
+                <li><a href="#" class="scills__list--color">Materialize CSS</a></li>
+                <li><a href="#" class="scills__list--color">jQuery</a></li>
+                <li><a href="#" class="scills__list--color">React.js</a></li>
+              </ul>
             </div>
           </div>
-          <div class="skills__right">
-            <h2 class="skills__hr">Skills</h2>
-            <div class="skills__block-2">
-              <div class="skills__right-web">
-                <h3 class="scills__list-title">Web</h3>
-                <ul class="scills__list">
-                  <li><a href="#" class="scills__list--color">HTML</a></li>
-                  <li><a href="#" class="scills__list--color">CSS</a></li>
-                  <li><a href="#" class="scills__list--color">Jawa Script</a></li>
-                  <li><a href="#" class="scills__list--color">Node JS</a></li>
-                </ul>
-              </div>
-              <div class="skills__right-framework">
-                <h3 class="scills__list-title">Framework</h3>
-                <ul class="scills__list">
-                  <li><a href="#" class="scills__list--color">Word Press</a></li>
-                  <li><a href="#" class="scills__list--color">Materialize CSS</a></li>
-                  <li><a href="#" class="scills__list--color">jQuery</a></li>
-                  <li><a href="#" class="scills__list--color">React.js</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-        <!--main__skills-->
-        <div class="main__work">
-          <h2 class="skills__hr">My Work</h2>
-          <div class="main__work-window">
-            <a href="pages/work.html" class="work-window__img"><img src="images/work/1/Article-p.jpg" alt="Load" height="130" width="220" /></a>
-            <a href="pages/work.html" class="work-window__img"><img src="images/work/2/Coming%20Soon.jpg" alt="BMW" height="130" width="220" /></a>
-            <a href="#" class="work-window__img"><img src="images/9.gif" alt="Load" height="130" width="220" /></a>
-            <a href="#" class="work-window__img"><img src="images/9.gif" alt="Load" height="130" width="220" /></a>
-          </div>
+      </div>
+      <!--main__skills-->
+      <div class="main__work">
+        <h2 class="skills__hr">My Work</h2>
+        <div class="main__work-window">
+          <a href="pages/work.html" class="work-window__img"><img src="images/work/1/Article-p.jpg" alt="Load" height="130" width="220" /></a>
+          <a href="pages/work.html" class="work-window__img"><img src="images/work/2/Coming%20Soon.jpg" alt="BMW" height="130" width="220" /></a>
+          <a href="pages/work.html" class="work-window__img"><img src="images/work/3/Home.jpg" alt="Load" height="130" width="220" /></a>
+          <a href="#" class="work-window__img"><img src="images/9.gif" alt="Load" height="130" width="220" /></a>
         </div>
-        <!--main__work END-->
-      </main>
-      <footer class="footer">
-        <div class="footer__content">
-          <p>Copyright &copy; 2018</p>
-        </div>
-        <div class="footer__social">
-          <a href="https://facebook.com/">
-            <div class="social--facebook"></div>
-          </a>
-          <a href="https://vimeo.com/">
-            <div class="social--vk"></div>
-          </a>
-          <a href="https://www.youtube.com/">
-            <div class="social--You-tube"></div>
-          </a>
-          <a href="https://twitter.com/">
-            <div class="social--twitter"></div>
-          </a>
-        </div>
-      </footer>
-    </div>
-    <script src="js/script.js"></script>
-  </body>
+      </div>
+      <!--main__work END-->
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <p>Copyright &copy; 2018</p>
+      </div>
+      <div class="footer__social">
+        <a href="https://facebook.com/">
+          <div class="social--facebook"></div>
+        </a>
+        <a href="https://vimeo.com/">
+          <div class="social--vk"></div>
+        </a>
+        <a href="https://www.youtube.com/">
+          <div class="social--You-tube"></div>
+        </a>
+        <a href="https://twitter.com/">
+          <div class="social--twitter"></div>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
 </html>
