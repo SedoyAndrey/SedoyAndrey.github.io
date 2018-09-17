@@ -7,7 +7,7 @@
   <title>HTML and CSS practive</title>
   <style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}button,input,optgroup,select,textarea{background:0 0;border:0;padding:0;margin:0;font:inherit;color:inherit;box-shadow:none}button{height:auto;cursor:pointer}button:focus{outline:0}button::-moz-focus-inner{outline:0;border:0;padding:0}
     </style>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="body">
@@ -15,12 +15,7 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <button class="nav-trigger const-flex const-flex--js_c" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-            </svg>
-          </button>
+
           <a class="logo" href="/">
             <img src="../assets/images/logo.png" alt="logo" />
           </a>
@@ -45,13 +40,25 @@
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
                 <path d="M0 0h24v24H0z" fill="none" />
               </svg>
+
             </a>
-            <a class="header__action const-flex const-flex--jc_c const-flex--ai_c" href="#">
+            <a class="header__action const-flex const-flex--jc_c const-flex--ai_c const-relative" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
                 <path d="M0 0h24v24H0z" fill="none" />
               </svg>
+              <span class="header__action-counter const-flex const-flex--jc_c const-flex--ai_c">5</span>
             </a>
+            <button class="nav-trigger const-flex const-flex--jc_c hidden-sm" type="button">
+              <svg class="nav-trigger__icon nav-trigger__icon--menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+              <svg class="nav-trigger__icon nav-trigger__icon--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                <path d="M0 0h24v24H0z" fill="none" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -63,6 +70,21 @@
       footer
     </footer>
   </div>
+  <div class="page-overlay hidden-sm"></div>
+
+  <script>
+    (function() {
+      const navTrigger = document.querySelector('.nav-trigger');
+      const nav = document.querySelector('.nav');
+      const pageOverlay = document.querySelector('.page-overlay');
+
+      navTrigger.addEventListener('click', function() {
+        navTrigger.classList.toggle('js-nav-trigger--active');
+        nav.classList.toggle('js-nav--active');
+        pageOverlay.classList.toggle('js-page-overlay--active');
+      }, false);
+    }());
+  </script>
 </body>
 
 </html>
